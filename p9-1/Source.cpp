@@ -16,10 +16,20 @@ int main() {
 		cout << randomDigits[i] << " ";
 	}
 
+	//showing all even indices
 	cout << "\nEven indices: ";
 	for (int i = 0; i < 9;) {
 		cout << randomDigits[i] << " ";
 		i += 2;
+	}
+
+	//showing all even values
+	cout << "\nEven values: ";
+	for (int i = 0; i < 10; i++) {
+		if (randomDigits[i] % 2 == 0) 
+			cout << randomDigits[i]<<" ";
+		else 
+			continue;
 	}
 
 	return 0;

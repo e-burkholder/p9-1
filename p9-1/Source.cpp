@@ -7,7 +7,7 @@ using namespace std;
 
 int main() {
 	int randomDigits[10];
-	//srand(time(0));
+	srand(time(0));
 
 	//generate 10 random integers
 	cout << "The random integers: ";
@@ -17,14 +17,14 @@ int main() {
 	}
 
 	//showing all even indices
-	cout << "\nEven indices: ";
-	for (int i = 0; i < 9;) {
+	cout << "\nEven indices:	     ";
+	for (int i = 0; i < 10;) {
 		cout << randomDigits[i] << " ";
 		i += 2;
 	}
 
 	//showing all even values
-	cout << "\nEven values: ";
+	cout << "\nEven values:	     ";
 	for (int i = 0; i < 10; i++) {
 		if (randomDigits[i] % 2 == 0) 
 			cout << randomDigits[i]<<" ";
@@ -33,12 +33,19 @@ int main() {
 	}
 
 	//showing all integers in opposite order
-	cout << "\nReversed order: ";
+	cout << "\nReversed order:	     ";
 	for (int i = 9; i >= 0; i--) {
 		cout << randomDigits[i] << " ";
 	}
 
-
+	//show only first and last
+	cout << "\nFirst and last:	     ";
+	for (int i = 0; i < 10; i++) {
+		if (i == 0 || i == 9)
+			cout << randomDigits[i]<<" ";
+		else
+			continue;
+	}
 
 	return 0;
 }

@@ -32,5 +32,13 @@ int main() {
 			continue;
 	}
 
+	//showing all integers in opposite order
+	cout << "\nReversed order: ";
+	for (int i = 9; i >= 0; i--) {
+		cout << randomDigits[i] << " ";
+	}
+
+
+
 	return 0;
 }
